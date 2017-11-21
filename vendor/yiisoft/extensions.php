@@ -48,4 +48,17 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'funson86/yii2-auth' =>
+  array (
+    'name' => 'funson86/yii2-auth',
+    'version' => '9999999-dev',
+    'alias' =>
+    array(
+      '@funson86/auth' => $venderDir . '/funson86/yii2-auth',
+    ),
+    'bootstrap' => 'funson86\\auth\\Bootstrap',
+  ),
+
+
+
 );
