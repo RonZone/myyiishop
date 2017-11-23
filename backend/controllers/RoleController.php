@@ -3,10 +3,13 @@
 namespace backend\controllers;
 
 use Yii;
+use yii\filters\AccessControl;
+use yii\web\ForbiddenHttpException;
+use yii\web\HttpException;
+
 use backend\models\Auth;
 use backend\models\AuthSearch;
 use yii\web\Controller;
-use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
@@ -26,6 +29,15 @@ class RoleController extends Controller
                     'delete' => ['POST'],
                 ],
             ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@']
+                    ]
+                ]
+            ],
         ];
     }
 
@@ -35,6 +47,8 @@ class RoleController extends Controller
      */
     public function actionIndex()
     {
+        //if(!Yii::$app->user->can('viewRole')) throw new ForbiddenHttpException(Yii::t('app', 'No Auth'));        
+
         $searchModel = new AuthSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 

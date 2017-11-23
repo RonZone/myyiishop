@@ -19,7 +19,7 @@ class Auth extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'auth_role';
+        return '{{%auth_item}}';
     }
 
     /**
@@ -28,10 +28,12 @@ class Auth extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name'], 'required'],
-            [['operation_list'], 'string'],
-            [['name'], 'string', 'max' => 64],
-            [['description'], 'string', 'max' => 255],
+            ['name', 'required'],
+            ['name', 'match', 'pattern' => '/^[a-zA-Z0-9_-]+$/'],
+            ['name', 'string', 'min' => 3, 'max' => 64],
+            ['name', 'validatePermission'],
+
+            ['description', 'string', 'min' => 1, 'max' => 400],
         ];
     }
 
@@ -41,10 +43,8 @@ class Auth extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'name' => 'Name',
-            'description' => 'Description',
-            'operation_list' => 'Operation List',
+            'name' => Yii::t('app', 'Name'),
+            'description' => Yii::t('app', 'Description'),
         ];
     }
 }

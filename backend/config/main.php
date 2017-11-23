@@ -24,7 +24,7 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
-            'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
+            //'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],
         'session' => [
             // this is the name of the session cookie used for login on the backend
@@ -43,7 +43,7 @@ return [
             'errorAction' => 'site/error',
         ],
         
-        /*'urlManager' => [
+        'urlManager' => [
             //启用URL美化
             'enablePrettyUrl' => true,
             //是否启用严格解析，如启用，要求当前请求应至少匹配一个路由规则
@@ -57,7 +57,7 @@ return [
                 //'<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
                 '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
             ],
-        ],*/
+        ],
         
     ],
     'params' => $params,

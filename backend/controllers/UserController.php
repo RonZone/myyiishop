@@ -3,9 +3,11 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\User;
-use common\models\UserSearch;
+use backend\models\User;
+use backend\models\UserSearch;
+use yii\filters\AccessControl;
 use yii\web\Controller;
+use yii\web\ForbiddenHttpException;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
@@ -26,6 +28,15 @@ class UserController extends Controller
                     'delete' => ['POST'],
                 ],
             ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@']
+                    ]
+                ]
+            ],
         ];
     }
 
@@ -37,10 +48,12 @@ class UserController extends Controller
     {
         $searchModel = new UserSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $arrayStatus = User::getArrayStatus();
 
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'arrayStatus' => $arrayStatus,
         ]);
     }
 
@@ -63,7 +76,8 @@ class UserController extends Controller
      */
     public function actionCreate()
     {
-        $model = new User();
+        //使用场景
+        $model = new User(['scenario' => 'admin-create']);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -82,15 +96,17 @@ class UserController extends Controller
      */
     public function actionUpdate($id)
     {
+        //使用场景update
         $model = $this->findModel($id);
+        $model->setScenario('admin-update');
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
+        } else {
+            return $this->render('update', [
+                    'model' => $model,
+            ]);
         }
-
-        return $this->render('update', [
-            'model' => $model,
-        ]);
     }
 
     /**

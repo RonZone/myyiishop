@@ -60,6 +60,8 @@ class AuthRoleSearch extends AuthRole
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
+            'group_id' => $this->group_id,
+            'company_id' => $this->company_id,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])

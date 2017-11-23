@@ -220,11 +220,11 @@ class User extends ActiveRecord implements IdentityInterface
         $this->password_reset_token = null;
     }
 
-    // /**
-    //  * @return \yii\db\ActiveQuery
-    //  */
-    // public function getAuthRole()
-    // {
-    //     return $this->hasOne(\common\models\AuthRole::className(), ['id' => 'auth_role']);
-    // }
+     /**
+      * @return \yii\db\ActiveQuery
+      */
+     public function getAuthRole()
+     {
+         return $this->hasOne(\common\models\AuthRole::className(), ['id' => 'auth_role']);
+     }
 }

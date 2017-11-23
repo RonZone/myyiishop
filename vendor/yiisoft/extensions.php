@@ -54,7 +54,7 @@ return array (
     'version' => '9999999-dev',
     'alias' =>
     array(
-      '@funson86/auth' => $venderDir . '/funson86/yii2-auth',
+      '@funson86/auth' => $vendorDir . '/funson86/yii2-auth',
     ),
     'bootstrap' => 'funson86\\auth\\Bootstrap',
   ),

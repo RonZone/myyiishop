@@ -3,6 +3,8 @@
 namespace backend\models;
 
 use Yii;
+use funson86\auth\models\AuthRole;
+use yii\helpers\ArrayHelper;
 
 
 /**
@@ -40,12 +42,47 @@ class User extends \common\models\User
 {
     
     public $password;
+    public $repassword;
+    public $oldpassword;
+
+    public $_statusLabel;
+    public $_authRoleLabel;
     /**
      * @inheritdoc
      */
-    public static function tableName()
+    public function getStatusLabel()
     {
-        return 'user';
+        if ($this->_statusLabel === null) {
+            $statuses = self::getArrayStatus();
+            $this->_statusLabel = $statuses[$this->status];
+        }
+        return $this->_statusLabel;
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public static function getArrayStatus()
+    {
+        return [
+            self::STATUS_ACTIVE => Yii::t('app', 'STATUS_ACTIVE'),
+            self::STATUS_INACTIVE => Yii::t('app', 'STATUS_INACTIVE'),
+            self::STATUS_DELETED => Yii::t('app', 'STATUS_DELETED'),
+        ];
+    }
+
+    public static function getArrayAuthRole()
+    {
+        return ArrayHelper::map(AuthRole::find()->all(), 'id', 'name');
+    }
+
+    public function getAuthRoleLabel()
+    {
+        if ($this->_authRoleLabel === null) {
+            $roles = self::getArrayAuthRole();
+            $this->_authRoleLabel = $this->auth_role ? $roles[$this->auth_role] : '-';
+        }
+        return $this->_authRoleLabel;
     }
 
     /**
@@ -54,13 +91,39 @@ class User extends \common\models\User
     public function rules()
     {
         return [
-            [['username', 'auth_key', 'password_hash', 'email', 'created_at', 'updated_at'], 'required'],
-            [['balance'], 'number'],
-            [['point', 'recommended_by', 'supported_by', 'auth_role', 'status', 'created_at', 'updated_at'], 'integer'],
-            [['username', 'access_token', 'password_hash', 'password_reset_token', 'email', 'recommended_name'], 'string', 'max' => 255],
-            [['auth_key'], 'string', 'max' => 32],
-            [['token', 'role'], 'string', 'max' => 64],
-            [['username'], 'unique'],
+            [['username', 'email'], 'required', 'on' => ['admin-create', 'admin-update']],
+            [['password', 'repassword'], 'required', 'on' => ['admin-create']],
+            [['password', 'repassword', 'oldpassword'], 'required', 'on' => ['admin-change-password']],
+            [['username', 'password', 'repassword', 'email'], 'trim', 'on' => ['admin-create','admin-update']],
+            [['password', 'repassword'], 'string', 'min' => 6, 'max' => 30, 'on' => ['admin-create', 'admin-update']],
+            [['password', 'repassword', 'oldpassword'], 'string', 'min' => 6, 'max' => 30, 'on' => ['admin-change-password']],
+            //Unique
+            [['username', 'email'], 'unique', 'on' => ['admin-create', 'admin-update']],
+            //Username
+            ['username', 'match', 'pattern' => '/^[a-zA-Z0-9_-]+$/', 'on' => ['admin-create', 'admin-update']],
+            ['username', 'string', 'min' => 3, 'max' => 30, 'on' => ['admin-create', 'admin-update']],
+            //E-mail
+            ['email', 'string', 'max' => 100, 'on' => ['admin-create', 'admin-update']],
+            ['email', 'email', 'on' => ['admin-create', 'admin-update']],
+            //Repassword
+            ['repassword', 'compare', 'compareAttribute' => 'password'],
+
+            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_INACTIVE, self::STATUS_DELETED]],
+
+            ['oldpassword', 'validateOldPassword', 'on' => ['admin-change-password']],
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    //场景  解决create和update时不同字段的限制规则
+    public function scenarios()
+    {
+        return [
+            'admin-create' => ['username', 'email', 'password', 'repassword', 'status', 'auth_role'],
+            'admin-update' => ['username', 'email', 'password', 'repassword', 'status', 'auth_role'],
+            'admin-change-password' => ['oldpassword', 'password', 'repassword'],
         ];
     }
 
@@ -69,89 +132,33 @@ class User extends \common\models\User
      */
     public function attributeLabels()
     {
-        return [
-            'id' => 'ID',
-            'username' => 'Username',
-            'auth_key' => 'Auth Key',
-            'token' => 'Token',
-            'access_token' => 'Access Token',
-            'password_hash' => 'Password Hash',
-            'password_reset_token' => 'Password Reset Token',
-            'email' => 'Email',
-            'balance' => 'Balance',
-            'point' => 'Point',
-            'recommended_by' => 'Recommended By',
-            'recommended_name' => 'Recommended Name',
-            'supported_by' => 'Supported By',
-            'auth_role' => 'Auth Role',
-            'role' => 'Role',
-            'status' => 'Status',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
-        ];
+        $labels = parent::attributelabels();
+
+        return array_merge(
+            $labels,
+            [
+                'password' => Yii::t('app', 'Password'),
+                'repassword' => Yii::t('app', 'Repassword'),
+                'oldpassword' => Yii::t('app', 'Oldpassword'),
+            ]
+        );
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * Validates the password.
+     * This method serves as the inline validation for password.
+     *
+     * @param string $attribute the attribute currently being validated
+     * @param array $params the additional name-value pairs given in the rule
      */
-    public function getAddresses()
+    public function validateOldPassword($attribute, $params)
     {
-        return $this->hasMany(Address::className(), ['user_id' => 'id']);
+        if (!$this->hasErrors()) {
+            $user = self::finOne(Yii::$app->user->identity->id);
+            if (!$user || !$user->validatePassword($this->oldpassword)) {
+                $this->addError($attribute, Yii::t('app', 'Incorrect old password.'));
+            }
+        }
     }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getComments()
-    {
-        return $this->hasMany(Comment::className(), ['user_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getConsultations()
-    {
-        return $this->hasMany(Consultation::className(), ['user_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getFavorites()
-    {
-        return $this->hasMany(Favorite::className(), ['user_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getOrders()
-    {
-        return $this->hasMany(Order::className(), ['user_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getPointLogs()
-    {
-        return $this->hasMany(PointLog::className(), ['user_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getProfile()
-    {
-        return $this->hasOne(Profile::className(), ['user_id' => 'id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUserEmails()
-    {
-        return $this->hasMany(UserEmail::className(), ['user_id' => 'id']);
-    }
+    
 }

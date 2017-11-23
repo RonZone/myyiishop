@@ -1,0 +1,2248 @@
+2017-11-21 17:30:27 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No Auth' in D:\WWW\myyiishop\vendor\funson86\yii2-auth\controllers\DefaultController.php:45
+Stack trace:
+#0 [internal function]: funson86\auth\controllers\DefaultController->actionIndex()
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auth', Array)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-11-21 17:30:26 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2204'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/auth'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/auth'
+    'REMOTE_PORT' => '53782'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511256626.3362
+    'REQUEST_TIME' => 1511256626
+]
+2017-11-21 17:30:45 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No Auth' in D:\WWW\myyiishop\vendor\funson86\yii2-auth\controllers\DefaultController.php:45
+Stack trace:
+#0 [internal function]: funson86\auth\controllers\DefaultController->actionIndex()
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auth', Array)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-11-21 17:30:44 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2204'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/auth'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/auth'
+    'REMOTE_PORT' => '53796'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511256644.1515
+    'REQUEST_TIME' => 1511256644
+]
+2017-11-21 17:32:26 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'No Auth' in D:\WWW\myyiishop\vendor\funson86\yii2-auth\controllers\DefaultController.php:45
+Stack trace:
+#0 [internal function]: funson86\auth\controllers\DefaultController->actionIndex()
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('auth', Array)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-11-21 17:32:25 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2204'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/auth'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/auth'
+    'REMOTE_PORT' => '53860'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myYiiShop/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511256745.7661
+    'REQUEST_TIME' => 1511256745
+]
+2017-11-22 13:53:41 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: arrayStatus' in D:\WWW\myyiishop\backend\views\user\index.php:62
+Stack trace:
+#0 D:\WWW\myyiishop\backend\views\user\index.php(62): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\myyiisho...', 62, Array)
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\WWW\myyiishop\backend\controllers\UserController.php(45): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-11-22 13:53:40 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2196'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '59874'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511330020.1262
+    'REQUEST_TIME' => 1511330020
+]
+2017-11-22 13:56:08 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: arrayStatus' in D:\WWW\myyiishop\backend\views\user\index.php:62
+Stack trace:
+#0 D:\WWW\myyiishop\backend\views\user\index.php(62): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\myyiisho...', 62, Array)
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\WWW\myyiishop\backend\controllers\UserController.php(45): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-11-22 13:56:06 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2248'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '59907'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511330166.935
+    'REQUEST_TIME' => 1511330166
+]
+2017-11-22 13:59:17 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: arrayStatus' in D:\WWW\myyiishop\backend\views\user\index.php:62
+Stack trace:
+#0 D:\WWW\myyiishop\backend\views\user\index.php(62): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\myyiisho...', 62, Array)
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\WWW\myyiishop\backend\controllers\UserController.php(45): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-11-22 13:59:15 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2248'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '59935'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511330355.812
+    'REQUEST_TIME' => 1511330355
+]
+2017-11-22 14:00:16 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: arrayStatus' in D:\WWW\myyiishop\backend\views\user\index.php:62
+Stack trace:
+#0 D:\WWW\myyiishop\backend\views\user\index.php(62): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\myyiisho...', 62, Array)
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#5 D:\WWW\myyiishop\backend\controllers\UserController.php(46): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\UserController->actionIndex()
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-11-22 14:00:15 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2248'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '59950'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511330415.0513
+    'REQUEST_TIME' => 1511330415
+]
+2017-11-22 14:02:44 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method common\models\User::getArrayStatus()' in D:\WWW\myyiishop\backend\controllers\UserController.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-22 14:02:43 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2452'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '59986'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511330563.2074
+    'REQUEST_TIME' => 1511330563
+]
+2017-11-22 14:04:30 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method common\models\User::getArrayStatus()' in D:\WWW\myyiishop\backend\controllers\UserController.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-22 14:04:29 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2452'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '60013'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511330669.0006
+    'REQUEST_TIME' => 1511330669
+]
+2017-11-22 14:12:19 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method common\models\User::getArrayStatus()' in D:\WWW\myyiishop\backend\controllers\UserController.php:51
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-22 14:12:18 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2196'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '60151'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511331138.7908
+    'REQUEST_TIME' => 1511331138
+]
+2017-11-22 14:37:58 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::repassword' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('repassword')
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\helpers\BaseHtml.php(2121): yii\db\BaseActiveRecord->__get('repassword')
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\helpers\BaseHtml.php(1294): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\User), 'repassword')
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\helpers\BaseHtml.php(1385): yii\helpers\BaseHtml::activeInput('password', Object(backend\models\User), 'repassword', Array)
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(backend\models\User), 'repassword', Array)
+#5 D:\WWW\myyiishop\backend\views\user\_form.php(21): yii\widgets\ActiveField->passwordInput(Array)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, NULL)
+#9 D:\WWW\myyiishop\backend\views\user\create.php(17): yii\base\View->render('_form', Array)
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#12 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#14 D:\WWW\myyiishop\backend\controllers\UserController.php(87): yii\base\Controller->render('create', Array)
+#15 [internal function]: backend\controllers\UserController->actionCreate()
+#16 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/create', Array)
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#22 {main}
+2017-11-22 14:37:57 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2212'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user/create'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user/create'
+    'REMOTE_PORT' => '60519'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user?UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bemail%5D=&UserSearch%5Bstatus%5D=&UserSearch%5Bcreated_at%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511332677.4311
+    'REQUEST_TIME' => 1511332677
+]
+2017-11-22 15:18:18 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][ReflectionException] exception 'ReflectionException' with message 'Class validateOldPassword does not exist' in D:\WWW\myyiishop\vendor\yiisoft\yii2\di\Container.php:426
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\di\Container.php(426): ReflectionClass->__construct('validateOldPass...')
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\di\Container.php(364): yii\di\Container->getDependencies('validateOldPass...')
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('validateOldPass...', Array, Array)
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('validateOldPass...', Array, Array)
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\validators\Validator.php(226): yii\BaseYii::createObject(Array)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Model.php(451): yii\validators\Validator::createValidator('validateOldPass...', Object(backend\models\User), Array, Array)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Model.php(413): yii\base\Model->createValidators()
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Model.php(429): yii\base\Model->getValidators()
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Model.php(477): yii\base\Model->getActiveValidators('username')
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\ActiveField.php(859): yii\base\Model->isAttributeRequired('username')
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\ActiveField.php(393): yii\widgets\ActiveField->addAriaAttributes(Array)
+#11 D:\WWW\myyiishop\backend\views\user\_form.php(17): yii\widgets\ActiveField->textInput(Array)
+#12 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, NULL)
+#15 D:\WWW\myyiishop\backend\views\user\create.php(17): yii\base\View->render('_form', Array)
+#16 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('create', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\backend\controllers\UserController.php(87): yii\base\Controller->render('create', Array)
+#21 [internal function]: backend\controllers\UserController->actionCreate()
+#22 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/create', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#28 {main}
+2017-11-22 15:18:16 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2212'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user/create'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user/create'
+    'REMOTE_PORT' => '61141'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user?UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bemail%5D=&UserSearch%5Bstatus%5D=&UserSearch%5Bcreated_at%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511335096.9345
+    'REQUEST_TIME' => 1511335096
+]
+2017-11-22 15:25:41 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method backend\models\User::getArrayRole()' in D:\WWW\myyiishop\backend\views\user\_form.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-22 15:25:40 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user/create'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user/create'
+    'REMOTE_PORT' => '61246'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user?UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bemail%5D=&UserSearch%5Bstatus%5D=&UserSearch%5Bcreated_at%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511335540.0701
+    'REQUEST_TIME' => 1511335540
+]
+2017-11-22 15:26:18 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '?>'' in D:\WWW\myyiishop\backend\views\user\_form.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-22 15:26:17 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user/create'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user/create'
+    'REMOTE_PORT' => '61256'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user?UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bemail%5D=&UserSearch%5Bstatus%5D=&UserSearch%5Bcreated_at%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511335577.5119
+    'REQUEST_TIME' => 1511335577
+]
+2017-11-22 15:27:05 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method backend\models\User::getArrayRole()' in D:\WWW\myyiishop\backend\views\user\_form.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-22 15:27:03 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user/create'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user/create'
+    'REMOTE_PORT' => '61265'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user?UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bemail%5D=&UserSearch%5Bstatus%5D=&UserSearch%5Bcreated_at%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511335623.7921
+    'REQUEST_TIME' => 1511335623
+]
+2017-11-22 16:42:32 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\models\ArrayHelp' not found' in D:\WWW\myyiishop\backend\models\User.php:76
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-11-22 16:42:31 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user/create'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user/create'
+    'REMOTE_PORT' => '62964'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user?UserSearch%5Bid%5D=&UserSearch%5Busername%5D=&UserSearch%5Bemail%5D=&UserSearch%5Bstatus%5D=&UserSearch%5Bcreated_at%5D='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511340151.1942
+    'REQUEST_TIME' => 1511340151
+]
+2017-11-22 16:44:32 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::authRole' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('authRole')
+#1 D:\WWW\myyiishop\backend\views\user\index.php(47): yii\db\BaseActiveRecord->__get('authRole')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(backend\models\User), 1, 0)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\User), 1, 0)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(backend\models\User), 1, 0)
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(backend\models\User), 1, 0)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#15 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\WWW\myyiishop\backend\views\user\index.php(87): yii\base\Widget::widget(Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\WWW\myyiishop\backend\controllers\UserController.php(57): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#27 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2017-11-22 16:44:30 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '62995'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511340270.8968
+    'REQUEST_TIME' => 1511340270
+]
+2017-11-22 16:44:49 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::authRole' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('authRole')
+#1 D:\WWW\myyiishop\backend\views\user\index.php(47): yii\db\BaseActiveRecord->__get('authRole')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(backend\models\User), 1, 0)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\User), 1, 0)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(backend\models\User), 1, 0)
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(backend\models\User), 1, 0)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#15 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\WWW\myyiishop\backend\views\user\index.php(87): yii\base\Widget::widget(Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\WWW\myyiishop\backend\controllers\UserController.php(57): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#27 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2017-11-22 16:44:48 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '63013'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511340288.7787
+    'REQUEST_TIME' => 1511340288
+]
+2017-11-22 16:52:46 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::authRole' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('authRole')
+#1 D:\WWW\myyiishop\backend\views\user\index.php(47): yii\db\BaseActiveRecord->__get('authRole')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(backend\models\User), 1, 0)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\User), 1, 0)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(backend\models\User), 1, 0)
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(backend\models\User), 1, 0)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#15 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\WWW\myyiishop\backend\views\user\index.php(87): yii\base\Widget::widget(Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\WWW\myyiishop\backend\controllers\UserController.php(57): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#27 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2017-11-22 16:52:44 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2252'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '63116'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511340764.8621
+    'REQUEST_TIME' => 1511340764
+]
+2017-11-22 17:01:16 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::authRole' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('authRole')
+#1 D:\WWW\myyiishop\backend\views\user\index.php(47): yii\db\BaseActiveRecord->__get('authRole')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(backend\models\User), 1, 0)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\User), 1, 0)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(backend\models\User), 1, 0)
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(backend\models\User), 1, 0)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#15 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\WWW\myyiishop\backend\views\user\index.php(87): yii\base\Widget::widget(Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\WWW\myyiishop\backend\controllers\UserController.php(57): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#27 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2017-11-22 17:01:14 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '63205'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511341274.7915
+    'REQUEST_TIME' => 1511341274
+]
+2017-11-22 17:07:40 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::authRole' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('authRole')
+#1 D:\WWW\myyiishop\backend\views\user\index.php(47): yii\db\BaseActiveRecord->__get('authRole')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(backend\models\User), 1, 0)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\User), 1, 0)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(backend\models\User), 1, 0)
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(backend\models\User), 1, 0)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#15 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\WWW\myyiishop\backend\views\user\index.php(87): yii\base\Widget::widget(Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\WWW\myyiishop\backend\controllers\UserController.php(57): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#27 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2017-11-22 17:07:39 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '63332'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511341659.5415
+    'REQUEST_TIME' => 1511341659
+]
+2017-11-22 17:07:44 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::authRole' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('authRole')
+#1 D:\WWW\myyiishop\backend\views\user\index.php(47): yii\db\BaseActiveRecord->__get('authRole')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(backend\models\User), 1, 0)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\User), 1, 0)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(backend\models\User), 1, 0)
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(backend\models\User), 1, 0)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#15 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\WWW\myyiishop\backend\views\user\index.php(87): yii\base\Widget::widget(Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\WWW\myyiishop\backend\controllers\UserController.php(57): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#27 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2017-11-22 17:07:43 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '63337'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511341663.3389
+    'REQUEST_TIME' => 1511341663
+]
+2017-11-22 17:08:57 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::authRole' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('authRole')
+#1 D:\WWW\myyiishop\backend\views\user\index.php(47): yii\db\BaseActiveRecord->__get('authRole')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(backend\models\User), 1, 0)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\User), 1, 0)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(backend\models\User), 1, 0)
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(backend\models\User), 1, 0)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#15 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\WWW\myyiishop\backend\views\user\index.php(87): yii\base\Widget::widget(Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\WWW\myyiishop\backend\controllers\UserController.php(57): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#27 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2017-11-22 17:08:56 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '63371'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511341736.586
+    'REQUEST_TIME' => 1511341736
+]
+2017-11-22 17:09:02 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::authRole' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('authRole')
+#1 D:\WWW\myyiishop\backend\views\user\index.php(47): yii\db\BaseActiveRecord->__get('authRole')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(backend\models\User), 1, 0)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\User), 1, 0)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(backend\models\User), 1, 0)
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(backend\models\User), 1, 0)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#15 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\WWW\myyiishop\backend\views\user\index.php(87): yii\base\Widget::widget(Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\WWW\myyiishop\backend\controllers\UserController.php(57): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#27 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2017-11-22 17:09:01 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2480'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '63378'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511341741.0699
+    'REQUEST_TIME' => 1511341741
+]
+2017-11-22 17:16:19 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\User::authRole' in D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Component.php:148
+Stack trace:
+#0 D:\WWW\myyiishop\vendor\yiisoft\yii2\db\BaseActiveRecord.php(288): yii\base\Component->__get('authRole')
+#1 D:\WWW\myyiishop\backend\views\user\index.php(47): yii\db\BaseActiveRecord->__get('authRole')
+#2 [internal function]: yii\base\View->{closure}(Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(224): call_user_func(Object(Closure), Object(backend\models\User), 1, 0, Object(yii\grid\DataColumn))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\DataColumn.php(238): yii\grid\DataColumn->getDataCellValue(Object(backend\models\User), 1, 0)
+#5 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\Column.php(111): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\User), 1, 0)
+#6 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(502): yii\grid\Column->renderDataCell(Object(backend\models\User), 1, 0)
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(471): yii\grid\GridView->renderTableRow(Object(backend\models\User), 1, 0)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(347): yii\grid\GridView->renderTableBody()
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(160): yii\grid\GridView->renderItems()
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(316): yii\widgets\BaseListView->renderSection('{items}')
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(135): yii\grid\GridView->renderSection('{items}')
+#12 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#13 D:\WWW\myyiishop\vendor\yiisoft\yii2\widgets\BaseListView.php(138): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#14 D:\WWW\myyiishop\vendor\yiisoft\yii2\grid\GridView.php(291): yii\widgets\BaseListView->run()
+#15 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Widget.php(140): yii\grid\GridView->run()
+#16 D:\WWW\myyiishop\backend\views\user\index.php(87): yii\base\Widget::widget(Array)
+#17 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#18 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#19 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#20 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('index', Array, Object(backend\controllers\UserController))
+#21 D:\WWW\myyiishop\backend\controllers\UserController.php(57): yii\base\Controller->render('index', Array)
+#22 [internal function]: backend\controllers\UserController->actionIndex()
+#23 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#24 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#25 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#26 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user', Array)
+#27 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#29 {main}
+2017-11-22 17:16:18 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2160'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user'
+    'REMOTE_PORT' => '63472'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511342178.033
+    'REQUEST_TIME' => 1511342178
+]
+2017-11-23 13:37:49 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: username' in D:\WWW\myyiishop\backend\views\user\update.php:8
+Stack trace:
+#0 D:\WWW\myyiishop\backend\views\user\update.php(8): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\\WWW\\myyiisho...', 8, Array)
+#1 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(332): require('D:\\WWW\\myyiisho...')
+#2 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\WWW\\myyiisho...', Array)
+#3 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('D:\\WWW\\myyiisho...', Array, Object(backend\controllers\UserController))
+#4 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(384): yii\base\View->render('update', Array, Object(backend\controllers\UserController))
+#5 D:\WWW\myyiishop\backend\controllers\UserController.php(108): yii\base\Controller->render('update', Array)
+#6 [internal function]: backend\controllers\UserController->actionUpdate('16')
+#7 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('update', Array)
+#10 D:\WWW\myyiishop\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/update', Array)
+#11 D:\WWW\myyiishop\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\WWW\myyiishop\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-11-23 13:37:47 [::1][1][mg6j7bv4k9198aeg85r46jk0r7][info][application] $_GET = [
+    'id' => '16'
+]
+
+$_COOKIE = [
+    'LiveWSALA60972770' => '1507695968067210087423'
+    'NALA60972770fistvisitetime' => '1507695968072'
+    'NALA60972770lastvisitetime' => '1507695968072'
+    'NALA60972770visitecounts' => '1'
+    'NALA60972770visitepages' => '1'
+    '6DA6_seccodec59a47f0' => 'yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR'
+    'Hm_lvt_4422240d6dd1c0a525da1df03c1f422d' => '1508383742'
+    'productHistory' => '5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces:2:\"13\";'
+    '_identity' => '373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";'
+    '_identity-backend' => '0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE\",2592000]\";}'
+    'PHPSESSID' => 'ljfkp6k3pcva5ucq986d4rgi93'
+    '_csrf' => 'c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds:32:\"HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-\";'
+    'advanced-backend' => 'mg6j7bv4k9198aeg85r46jk0r7'
+    '_csrf-backend' => 'c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'PATH' => 'D:\\python35\\Scripts\\;D:\\python35\\;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;D:\\python35\\Lib\\site-packages\\Django-1.7.11-py3.5.egg\\django\\bin;D:\\Git\\cmd;D:\\Git\\bin;D:\\TortoiseGit\\bin;D:\\phpStudy\\MySQL\\bin;D:\\phpStudy\\php54n;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpStudy/php54n'
+    '_FCGI_SHUTDOWN_EVENT_' => '2192'
+    'SCRIPT_NAME' => '/myyiishop/backend/web/index.php'
+    'REQUEST_URI' => '/myyiishop/backend/web/user/update?id=16'
+    'QUERY_STRING' => 'id=16'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/myyiishop/backend/web/user/update'
+    'REDIRECT_QUERY_STRING' => 'id=16'
+    'REMOTE_PORT' => '59339'
+    'SCRIPT_FILENAME' => 'D:/WWW/myyiishop/backend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/WWW'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/WWW'
+    'REMOTE_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '::1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/0.9.8zb mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'LiveWSALA60972770=1507695968067210087423; NALA60972770fistvisitetime=1507695968072; NALA60972770lastvisitetime=1507695968072; NALA60972770visitecounts=1; NALA60972770visitepages=1; 6DA6_seccodec59a47f0=yj1D2UsVx2ULyYgmmbklX5UWfrxWxnrBhpvkso7H8jMto2H62oR; Hm_lvt_4422240d6dd1c0a525da1df03c1f422d=1508383742; productHistory=5c09e6feb89904e2c52b46f190760f6affae33a76d6d3a5f9827d5a29ae440ces%3A2%3A%2213%22%3B; _identity=373c1fa229491f7fa157dfaf0d286bf1f4910054e1d54d86a1343dad5f524324s%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B; _identity-backend=0b07aa2a60aec636b3c5487c0ad66aaf16a870bd238b9a6176de6fb0b1bf193ea%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bPdqSVmrWdkx-x7_hplXE_Y0Ak9mwdoE%22%2C2592000%5D%22%3B%7D; PHPSESSID=ljfkp6k3pcva5ucq986d4rgi93; _csrf=c2a4e526c86d6b31d5785b0b9c852402e839867ca318d001eec67e71e797e2cds%3A32%3A%22HFqTImo-SuFB1zxEMWJBFXWpSbx-Ru_-%22%3B; advanced-backend=mg6j7bv4k9198aeg85r46jk0r7; _csrf-backend=c25123de9c4920bf9fce1bbd17ae88bd7b62033f2beb4d23e89b193fd5de1387a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f8NsZgZK6dd0k0D6cTg-MmGTSJQrQbhy%22%3B%7D'
+    'HTTP_REFERER' => 'http://localhost/myyiishop/backend/web/user/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:57.0) Gecko/20100101 Firefox/57.0'
+    'HTTP_HOST' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/myyiishop/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1511415467.8496
+    'REQUEST_TIME' => 1511415467
+]

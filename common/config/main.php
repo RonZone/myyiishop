@@ -9,13 +9,10 @@ return [
     'components' => [
         // 'user' =>[
         //     'class' =>'common\components\User',
-        //     'enableAutoLogin' => true,
-        // ],
+         //    'enableAutoLogin' => true,
+         //],
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
-            'itemTable' => 'auth_item',
-            'assignmentTable' => 'auth_assignment',
-            'itemChildTable' => 'auth_item_child',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -30,6 +27,12 @@ return [
                 ],
             ],
         ],
+        'formatter' => [
+            'dateFormat' => 'yyyy-MM-dd',
+            'datetimeFormat' => 'yyyy-MM-dd HH:mm:ss',
+
+        ],
+
 
 
     ],
