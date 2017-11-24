@@ -3,19 +3,18 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\filters\AccessControl;
-use yii\web\ForbiddenHttpException;
-use yii\web\HttpException;
-
-use backend\models\Auth;
-use backend\models\AuthSearch;
+use common\models\Region;
+use common\models\RegionSearch;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
+use yii\web\ForbiddenHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
- * RoleController implements the CRUD actions for Auth model.
+ * RegionController implements the CRUD actions for Region model.
  */
-class RoleController extends Controller
+class RegionController extends Controller
 {
     /**
      * @inheritdoc
@@ -42,15 +41,13 @@ class RoleController extends Controller
     }
 
     /**
-     * Lists all Auth models.
+     * Lists all Region models.
      * @return mixed
      */
     public function actionIndex()
     {
-        //if(!Yii::$app->user->can('viewRole')) throw new ForbiddenHttpException(Yii::t('app', 'No Auth'));        
-
-        $searchModel = new AuthSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->get(), Auth::TYPE_ROLE);
+        $searchModel = new RegionSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -59,7 +56,7 @@ class RoleController extends Controller
     }
 
     /**
-     * Displays a single Auth model.
+     * Displays a single Region model.
      * @param integer $id
      * @return mixed
      */
@@ -71,13 +68,13 @@ class RoleController extends Controller
     }
 
     /**
-     * Creates a new Auth model.
+     * Creates a new Region model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Auth();
+        $model = new Region();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -89,7 +86,7 @@ class RoleController extends Controller
     }
 
     /**
-     * Updates an existing Auth model.
+     * Updates an existing Region model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -108,7 +105,7 @@ class RoleController extends Controller
     }
 
     /**
-     * Deletes an existing Auth model.
+     * Deletes an existing Region model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -121,15 +118,38 @@ class RoleController extends Controller
     }
 
     /**
-     * Finds the Auth model based on its primary key value.
+     * List Region Children for select
+     * If deletion is successful, the browser will be redirected to the 'index' page.
+     * @param string $id
+     * @return mixed
+     */
+    public function actionAjaxListChild($id)
+    {
+        $countChild = Region::find()->where(['parent_id' => $id])->count();
+        $children = Region::find()->where(['parent_id' => $id])->all();
+
+        if ($countChild > 0) 
+        {
+            echo "<option>" . Yii::t('app', 'Please Select') . "</option>";
+            foreach($children as $child)
+                echo "<option value='" . $child->id . "'>" . $child->name . "</option>";
+        }
+        else
+        {
+            echo "<option>" . Yii::t('app', 'No Option') . "</option>";
+        }
+    }
+
+    /**
+     * Finds the Region model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Auth the loaded model
+     * @return Region the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Auth::findOne($id)) !== null) {
+        if (($model = Region::findOne($id)) !== null) {
             return $model;
         }
 

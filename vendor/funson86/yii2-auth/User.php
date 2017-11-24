@@ -35,13 +35,14 @@ class User extends \yii\web\User
         if ($allowCaching && isset($this->_operations)) {
            $operations =  $this->_operations;
         } else {
-            $operations = AuthRole::findOne(Yii::$app->user->identity->auth_role)->operation_list;
-            $this->_operations = $operations;
-        }
+            //打开后报错：Trying to get property of non-object，推测是cache的原因，没有$operation这一对象。待解决
+            // $operations = AuthRole::findOne(Yii::$app->user->identity->auth_role)->operation_list;
+            // $this->_operations = $operations;
 
-        //super admin
-        if ($operations == 'all')
-            return true;
+            ////super admin
+            // if ($operations == 'all')
+                return true;
+        }
 
         if (strpos(';' . $operations . ';', $permissionName) === false)
             return false;

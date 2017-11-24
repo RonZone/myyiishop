@@ -1,5 +1,4 @@
 <?php
-
 namespace backend\models;
 
 use Yii;
@@ -142,6 +141,22 @@ class User extends \common\models\User
                 'oldpassword' => Yii::t('app', 'Oldpassword'),
             ]
         );
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function beforeSave($insert)
+    {
+        if (parent::beforeSave($insert)) {
+            if ($this->isNewRecord || (!$this->isNewRecord && $this->password)) {
+                $this->setPassword($this->password);
+                $this->generateAuthKey();
+                $this->generatePasswordResetToken();
+            }
+            return true;
+        }
+        return false;
     }
 
     /**

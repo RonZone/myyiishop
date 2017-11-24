@@ -162,4 +162,9 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
+
+    public function actionChangePassword()
+    {
+        //没有权限，还是和funson86\yii2-auth\user有关
+    }
 }

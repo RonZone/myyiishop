@@ -7,10 +7,10 @@ return [
     ],
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
-        // 'user' =>[
-        //     'class' =>'common\components\User',
-         //    'enableAutoLogin' => true,
-         //],
+        'user' =>[
+            'class' =>'common\components\User',
+            'enableAutoLogin' => true,
+        ],
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
         ],
@@ -23,6 +23,7 @@ return [
                     'class' => 'yii\i18n\PhpMessageSource',
                     'fileMap' => [
                         'app' => 'app.php',
+                        'app/error' => 'error.php',
                     ],
                 ],
             ],

@@ -3,19 +3,17 @@
 namespace backend\controllers;
 
 use Yii;
-use yii\filters\AccessControl;
-use yii\web\ForbiddenHttpException;
-use yii\web\HttpException;
-
-use backend\models\Auth;
-use backend\models\AuthSearch;
+use common\models\Address;
+use common\models\AddressSearch;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
- * RoleController implements the CRUD actions for Auth model.
+ * AddressController implements the CRUD actions for Address model.
  */
-class RoleController extends Controller
+class AddressController extends Controller
 {
     /**
      * @inheritdoc
@@ -42,15 +40,13 @@ class RoleController extends Controller
     }
 
     /**
-     * Lists all Auth models.
+     * Lists all Address models.
      * @return mixed
      */
     public function actionIndex()
     {
-        //if(!Yii::$app->user->can('viewRole')) throw new ForbiddenHttpException(Yii::t('app', 'No Auth'));        
-
-        $searchModel = new AuthSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->get(), Auth::TYPE_ROLE);
+        $searchModel = new AddressSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
@@ -59,7 +55,7 @@ class RoleController extends Controller
     }
 
     /**
-     * Displays a single Auth model.
+     * Displays a single Address model.
      * @param integer $id
      * @return mixed
      */
@@ -71,25 +67,27 @@ class RoleController extends Controller
     }
 
     /**
-     * Creates a new Auth model.
+     * Creates a new Address model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Auth();
+        $model = new Address();
+        $model->loadDefaultValues();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
+        } else {
+            return $this->render('create', [
+                'model' => $model,
+            ]);
         }
 
-        return $this->render('create', [
-            'model' => $model,
-        ]);
     }
 
     /**
-     * Updates an existing Auth model.
+     * Updates an existing Address model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -108,7 +106,7 @@ class RoleController extends Controller
     }
 
     /**
-     * Deletes an existing Auth model.
+     * Deletes an existing Address model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -121,15 +119,15 @@ class RoleController extends Controller
     }
 
     /**
-     * Finds the Auth model based on its primary key value.
+     * Finds the Address model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Auth the loaded model
+     * @return Address the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Auth::findOne($id)) !== null) {
+        if (($model = Address::findOne($id)) !== null) {
             return $model;
         }
 

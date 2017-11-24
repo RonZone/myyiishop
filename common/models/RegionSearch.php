@@ -5,12 +5,12 @@ namespace common\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use common\models\AuthRole;
+use common\models\Region;
 
 /**
- * AuthRoleSearch represents the model behind the search form about `common\models\AuthRole`.
+ * RegionSearch represents the model behind the search form about `common\models\Region`.
  */
-class AuthRoleSearch extends AuthRole
+class RegionSearch extends Region
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class AuthRoleSearch extends AuthRole
     public function rules()
     {
         return [
-            [['id', 'group_id', 'company_id'], 'integer'],
-            [['name', 'description', 'operation_list'], 'safe'],
+            [['id', 'parent_id', 'grade'], 'integer'],
+            [['name', 'path', 'language'], 'safe'],
         ];
     }
 
@@ -41,25 +41,27 @@ class AuthRoleSearch extends AuthRole
      */
     public function search($params)
     {
-        $query = AuthRole::find();
+        $query = Region::find();
+        
+        $query->orderBy(['id' => SORT_ASC]);
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);
 
-        if (!($this->load($params) && $this->validate())) {
+        if ($this->load($params) && !$this->validate()) {
             return $dataProvider;
         }
 
         $query->andFilterWhere([
             'id' => $this->id,
-            'group_id' => $this->group_id,
-            'company_id' => $this->company_id,
+            'parent_id' => $this->parent_id,
+            'grade' => $this->grade,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'description', $this->description])
-            ->andFilterWhere(['like', 'operation_list', $this->operation_list]);
+            ->andFilterWhere(['like', 'path', $this->path])
+            ->andFilterWhere(['like', 'language', $this->language]);
 
         return $dataProvider;
     }

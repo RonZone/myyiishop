@@ -49,14 +49,14 @@ return [
             //是否启用严格解析，如启用，要求当前请求应至少匹配一个路由规则
             // 'enableStrictParsing' => false,
             //是否在URL显示入口脚本，是对美化功能的进一步补充。
-            'showScriptName' => false,
+            //'showScriptName' => false,
             //指定续接在URL后面的一个后缀，如.html之类的，仅在enablePrettyUrl启用时有效
-            'suffix' => '',
-            'rules' => [
-                '<controller:\w+>/<id:\d+>' => '<controller>/view',
+            //'suffix' => '',
+            //'rules' => [
+            //    '<controller:\w+>/<id:\d+>' => '<controller>/view',
                 //'<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
-                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-            ],
+            //    '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+            //],
         ],
         
     ],
