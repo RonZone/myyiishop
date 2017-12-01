@@ -59,6 +59,57 @@ return array (
     'bootstrap' => 'funson86\\auth\\Bootstrap',
   ),
 
+  'funson86/yii2-cms' =>
+  array (
+    'name' => 'funson86/yii2-cms',
+    'version' => '9999999-dev',
+    'alias' =>
+    array(
+      '@funson86/cms' => $vendorDir . '/funson86/yii2-cms',
+    ),
+    'bootstrap' => 'funson86\\cms\\Bootstrap',
+  ),
+
+  'funson86/yii2-blog' => 
+  array (
+    'name' => 'funson86/yii2-blog',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@funson86/blog' => $vendorDir . '/funson86/yii2-blog',
+    ),
+    'bootstrap' => 'funson86\\blog\\Bootstrap',
+  ),
+
+  'mihaildev/yii2-ckeditor' =>
+  array (
+    'name' => 'mihaildev/yii2-ckeditor',
+    'version' => '9999999-dev',
+    'alias' => 
+    array(
+        '@mihaildev/ckeditor' => $vendorDir . '/mihaildev/yii2-ckeditor',
+    ),
+  ),
+
+  'devgroup/yii2-dropzone' => 
+  array (
+    'name' => 'devgroup/yii2-dropzone',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@devgroup/dropzone' => $vendorDir . '/devgroup/yii2-dropzone',
+    ),
+  ),
+
+  'yiisoft/yii2-imagine' => 
+  array (
+    'name' => 'yiisoft/yii2-imagine',
+    'version' => '9999999-dev',
+    'alias' => 
+    array (
+      '@yii/imagine' => $vendorDir . '/yiisoft/yii2-imagine',
+    ),
+  ),
 
 
 );

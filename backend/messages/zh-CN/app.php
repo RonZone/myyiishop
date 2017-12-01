@@ -266,4 +266,6 @@ return [
 
     'Shipment' => '配送',
 
+    'Root Catalog' => '顶级目录',
+
 ];

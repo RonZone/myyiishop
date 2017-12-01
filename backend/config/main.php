@@ -16,6 +16,10 @@ return [
             'class' => 'funson86\auth\Module',
             'controllerNamespace' => 'funson86\auth\controllers'
         ],
+        'cms' => [
+            'class' => 'funson86\cms\Module',
+            'controllerNamespace' => 'funson86\cms\controllers\backend'
+        ],
     ],
     'components' => [
         'request' => [
@@ -45,7 +49,7 @@ return [
         
         'urlManager' => [
             //启用URL美化
-            'enablePrettyUrl' => true,
+            //'enablePrettyUrl' => true,
             //是否启用严格解析，如启用，要求当前请求应至少匹配一个路由规则
             // 'enableStrictParsing' => false,
             //是否在URL显示入口脚本，是对美化功能的进一步补充。
